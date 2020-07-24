@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 10vh;
     box-shadow: 0px 0px 5px 0px #ddd;
+    background-color: white;
     transition-duration: .3s;
 }
 
@@ -35,6 +36,7 @@ body {
     left: 0;
     height: 80%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .burger {
@@ -131,6 +133,36 @@ body {
     border-radius: 50%;
     animation: moveRgb 2.5s linear infinite;
 }
+
+.abt-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.abt-us .logo-abt-us {
+    width: 100%;
+    text-align: center;
+}
+
+.abt-us .abt-us-text {
+    width: 100%;
+    text-align: justify;
+}
+
+.abt-us .abt-us-text p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
 
 .realization {
     position: relative;
@@ -331,6 +363,13 @@ body {
 
 @media (min-width: 1024px) {
 
+    body {
+        background-image: url(img/bgtst2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .nav.change {
         display: none;
     }
@@ -407,6 +446,16 @@ body {
         cursor: pointer;
     }
 
+
+    .abt-us .abt-us-text {
+        position: relative;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+    }
+
     .realization {
         width: 90%;
         margin: 0 auto;
@@ -475,6 +524,15 @@ body {
     .social-media i:hover {
         color: green;
         cursor: pointer;
+    }
+
+    .abt-us {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .abt-us .abt-us-text p {
+        text-align: center;
     }
 
 }
