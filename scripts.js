@@ -11,9 +11,19 @@ let $realizationFromTop = $('.realization').offset().top;
 let $locationsFromTop = $('.locations').offset().top;
 let $opinionsFromTop = $('.opinions').offset().top;
 let $contactFromTop = $('.contact-section').offset().top;
+let $abtUsFromTop = $('.abt-us').offset().top;
+
 
 let $navHeight = $('.nav').outerHeight();
 let $menuHeight = $('.menu').outerHeight();
+
+$('.one').on('click', function () {
+    if ($(window).innerWidth() > 1024) {
+        $(window).scrollTop($abtUsFromTop);
+    } else {
+        $(window).scrollTop($abtUsFromTop + $menuHeight);
+    }
+})
 
 $('.two').on('click', function () {
     if ($(window).innerWidth() > 1024) {
